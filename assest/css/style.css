@@ -1,0 +1,23 @@
+* {
+    --blue-: hsl(220.63deg 48.98% 38.43%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+
+.welcome {
+    border: 2px solid var(--blue-);
+}
+.hd .welc{
+    padding: 2px;
+    background: var(--blue-);
+    color: aliceblue;
+}
+.boxed{
+    padding: 10px;
+}
+.boxed .hi{
+    text-align: center;
+    font-weight: bold;
+    font-size:18px;
+}
