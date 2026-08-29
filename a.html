@@ -1,11 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document2</title>
+    <title>Fórmulas y Gatos</title>
+    <style>
+        :root {
+            --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --color-text-light: #f0f8ff;
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: var(--font-main);
+            color: var(--color-text-light);
+            font-weight: bold;
+            min-height: 100vh;
+            padding: 2rem;
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/img/cater.jpg') no-repeat center center/cover;
+        }
+        .formulas {
+            font-size: 3.5rem;
+            line-height: 1.4;
+            margin-bottom: 3rem;
+        }
+        @keyframes changeColor {
+            0%, 100% { color: #ffeb3b; }
+            33% { color: #f44336; }
+            66% { color: #4caf50; }
+        }
+        .animated-text {
+            animation: changeColor 3s infinite ease-in-out;
+        }
+        .agua {
+            background: url('assets/img/a.jpg') no-repeat center/cover;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+            display: inline-block;
+        }
+        .book {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            border-radius: 12px;
+            padding: 1.5rem;
+            max-width: 400px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        .title h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+        }
+        .imges img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        @media (max-width: 600px) {
+            .formulas { font-size: 2rem; }
+            body { padding: 1rem; }
+        }
+    </style>
 </head>
 <body>
-    a html
+    <main class="formulas">
+        <p><span class="agua">Agua</span>: H<sub class="animated-text">2</sub>O</p>
+        <p>Fórmula: 2x<sup class="animated-text">2</sup> + 3 = 12</p>
+    </main>
+    <section class="book">
+        <div class="title">
+            <h2>Imágenes de gatos</h2>
+        </div>
+        <div class="imges">
+            <img src="assets/img/images.jpg" alt="Fotografía de un gato doméstico">
+        </div>
+    </section>
 </body>
 </html>
